@@ -1,0 +1,165 @@
+{
+  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.48\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"visible\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU08",
+            "path": "BaseThemes/CY23SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Group2_371864596092828225249.png",
+            "path": "Group2_371864596092828225249.png",
+            "type": 100
+          },
+          {
+            "name": "homme7385969967582884.png",
+            "path": "homme7385969967582884.png",
+            "type": 100
+          },
+          {
+            "name": "vecteezy_female-icon-vector-fo7962382016125591.jpg",
+            "path": "vecteezy_female-icon-vector-fo7962382016125591.jpg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "RH Management Dasboard",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2dc56695eb3509610323\",\"layouts\":[{\"id\":0,\"position\":{\"x\":772.5636672325976,\"y\":86.7911714770798,\"z\":6000,\"width\":199.25297113752123,\"height\":177.2495755517827,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Personnel._% Homme\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Personnel\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"_% Homme\"},\"Name\":\"T_Personnel._% Homme\",\"NativeReferenceName\":\"_% Homme\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"_% Homme\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 177.25,
+          "width": 199.25,
+          "x": 772.56,
+          "y": 86.79,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"4311cc0052394835015d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":135.68760611205434,\"y\":86.7911714770798,\"z\":9000,\"width\":57.45331069609508,\"height\":58.67572156196944,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Group2_371864596092828225249.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 58.68,
+          "width": 57.45,
+          "x": 135.69,
+          "y": 86.79,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"448643d8900d14c600c6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":631.9864176570459,\"y\":499.96604414261463,\"z\":4000,\"width\":601.4261460101868,\"height\":188.25127334465196,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"T_Contrat.type\",\"active\":true}],\"Y\":[{\"queryRef\":\"T_Personnel._Nombre_Personel\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Contrat\",\"Type\":0},{\"Name\":\"t1\",\"Entity\":\"T_Personnel\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"type\"},\"Name\":\"T_Contrat.type\",\"NativeReferenceName\":\"type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"_Nombre_Personel\"},\"Name\":\"T_Personnel._Nombre_Personel\",\"NativeReferenceName\":\"_Nombre_Personel\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"_Nombre_Personel\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 188.25,
+          "width": 601.43,
+          "x": 631.99,
+          "y": 499.97,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"569fe0f00b003d8209b4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":292.1561969439728,\"y\":80.67911714770798,\"z\":1000,\"width\":229.81324278438032,\"height\":183.3616298811545,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Personnel._Age Moyen\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Personnel\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"_Age Moyen\"},\"Name\":\"T_Personnel._Age Moyen\",\"NativeReferenceName\":\"_Age Moyen\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"_Age Moyen\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 183.36,
+          "width": 229.81,
+          "x": 292.16,
+          "y": 80.68,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"64bc3fbe3672ac34a572\",\"layouts\":[{\"id\":0,\"position\":{\"x\":18.33616298811545,\"y\":499.96604414261463,\"z\":3000,\"width\":587.9796264855688,\"height\":188.25127334465196,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Y\":[{\"queryRef\":\"T_Personnel._Nombre_Personel\"}],\"Category\":[{\"queryRef\":\"T_Personnel.sexe\",\"active\":true},{\"queryRef\":\"T_Poste.cadre / non cadre\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t1\",\"Entity\":\"T_Personnel\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"T_Poste\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"_Nombre_Personel\"},\"Name\":\"T_Personnel._Nombre_Personel\",\"NativeReferenceName\":\"_Nombre_Personel\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"sexe\"},\"Name\":\"T_Personnel.sexe\",\"NativeReferenceName\":\"sexe\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"cadre / non cadre\"},\"Name\":\"T_Poste.cadre / non cadre\",\"NativeReferenceName\":\"cadre / non cadre\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"_Nombre_Personel\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#C3673F'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Personnel\"}},\"Property\":\"sexe\"}},\"Right\":{\"Literal\":{\"Value\":\"'F'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#E1C233'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T_Personnel\"}},\"Property\":\"sexe\"}},\"Right\":{\"Literal\":{\"Value\":\"'M'\"}}}}}]}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 188.25,
+          "width": 587.98,
+          "x": 18.34,
+          "y": 499.97,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"755e06cc030e6602d29d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":546.4176570458404,\"y\":86.7911714770798,\"z\":5000,\"width\":204.1426146010187,\"height\":177.2495755517827,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Personnel._% Femme\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Personnel\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"_% Femme\"},\"Name\":\"T_Personnel._% Femme\",\"NativeReferenceName\":\"_% Femme\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"_% Femme\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 177.25,
+          "width": 204.14,
+          "x": 546.42,
+          "y": 86.79,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"98c86c26a8eb402b7085\",\"layouts\":[{\"id\":0,\"position\":{\"x\":622.207130730051,\"y\":91.68081494057725,\"z\":11000,\"width\":70.89983022071307,\"height\":67.23259762308999,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"vecteezy_female-icon-vector-fo7962382016125591.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 67.23,
+          "width": 70.90,
+          "x": 622.21,
+          "y": 91.68,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"9e9fce3d0a11042572d1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.00509337860781,\"y\":286.044142614601,\"z\":2000,\"width\":1215.0764006791171,\"height\":200.4753820033956,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"T_Personnel._Nombre_Personel\"}],\"Category\":[{\"queryRef\":\"T_Personnel.Age\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Personnel\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"_Nombre_Personel\"},\"Name\":\"T_Personnel._Nombre_Personel\",\"NativeReferenceName\":\"_Nombre_Personel\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Age\"},\"Name\":\"T_Personnel.Age\",\"NativeReferenceName\":\"Age\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"_Nombre_Personel\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 200.48,
+          "width": 1215.08,
+          "x": 33.01,
+          "y": 286.04,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"b49b28cc50937ee5ea1a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1017.0458404074703,\"y\":91.68081494057725,\"z\":7000,\"width\":200.4753820033956,\"height\":97.79286926994907,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Poste.cadre / non cadre\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Poste\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"cadre / non cadre\"},\"Name\":\"T_Poste.cadre / non cadre\",\"NativeReferenceName\":\"cadre / non cadre\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 97.79,
+          "width": 200.48,
+          "x": 1017.05,
+          "y": 91.68,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"ea808e9c03ee5a123d45\",\"layouts\":[{\"id\":0,\"position\":{\"x\":68.45500848896435,\"y\":80.67911714770798,\"z\":0,\"width\":185.80645161290323,\"height\":183.3616298811545,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"T_Personnel._Nombre_Personel\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T_Personnel\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"_Nombre_Personel\"},\"Name\":\"T_Personnel._Nombre_Personel\",\"NativeReferenceName\":\"_Nombre_Personel\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"_Nombre_Personel\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 183.36,
+          "width": 185.81,
+          "x": 68.46,
+          "y": 80.68,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"ef3d0a5dac8b3261c52e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":172.35993208828523,\"y\":15.891341256366724,\"z\":8000,\"width\":908.251273344652,\"height\":56.230899830220714,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"RH MANAGEMENT \",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 56.23,
+          "width": 908.25,
+          "x": 172.36,
+          "y": 15.89,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"fd739ee5ec701458d104\",\"layouts\":[{\"id\":0,\"position\":{\"x\":844.685908319185,\"y\":91.68081494057725,\"z\":10000,\"width\":56.230899830220714,\"height\":58.67572156196944,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"homme7385969967582884.png\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 58.68,
+          "width": 56.23,
+          "x": 844.69,
+          "y": 91.68,
+          "z": 10000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
